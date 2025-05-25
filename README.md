@@ -83,11 +83,11 @@ Trigger this automation however you like — from a dashboard button or other ev
 
 ---
 
-##Example Use Case: Grocery List Data Analysis with File2prompt
+## Example Use Case: Grocery List Data Analysis with File2prompt
 I use this integration to analyze my grocery and to-do behavior by automatically logging items added to my shopping list and then processing that data with AI via File2prompt.
 Let's continue the setup for this.
 
-###Step 1: Install the File Integration
+### Step 1: Install the File Integration
 1. First, install the standard File Integration in Home Assistant to create a file where the grocery items will be saved:
 2. Go to Settings → Integrations → + Add Integration
 3. Search for and install File
@@ -99,7 +99,7 @@ Let's continue the setup for this.
 
 This file will be used to save grocery items in a JSON file, including timestamps.
 
-###Step 2: Automation to Save Grocery Items to File
+### Step 2: Automation to Save Grocery Items to File
 Create an automation that saves every new item added to your shopping list into the file created with the file intgeration:
 ```
 alias: Grocery - Save todo to file
