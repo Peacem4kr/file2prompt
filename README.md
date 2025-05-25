@@ -51,7 +51,7 @@ Create a token in your Ollama or LLM server interface:
 
 You can update these settings later under **Settings → Devices & Services → File2prompt → Configure**.
 
-The prompt can be changed here aswell. (at the moment the prompt is not showing correctly what is setup, meeaning that u can save a new prompt - it will work - but the interface will keep showing the default - use the **Reset prompt to default** to apply the default)
+The prompt can be changed here aswell. (at the moment the prompt is not showing correctly what is setup, meaning that u can save a new prompt - it will work - but the interface will keep showing the default - use the **Reset prompt to default** to apply the default)
 
 
 ### Step 3: Add Shell Command to `configuration.yaml`
