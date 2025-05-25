@@ -1,4 +1,4 @@
-# File2prompt for Home Assistant Custom integration
+# File2prompt for Home Assistant - Custom integration
 
 ## Overview
 
