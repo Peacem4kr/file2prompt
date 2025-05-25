@@ -4,6 +4,71 @@
 
 This repository contains a custom integration for Home Assistant called "File2prompt." The integration connects Home Assistant with an Ollama language model server to analyze data. It allows users to choose a input data file and send it to an Ollama LLM for analysis via Home Assistant. 
 
+# File2prompt - Home Assistant Custom Integration
+
+**File2prompt** is a custom integration for Home Assistant that allows you to send file contents to your Ollama (or similar) LLM server and use the AI response inside Home Assistant automations, notifications, or helpers.
+
+---
+
+## Requirements
+
+- Home Assistant with [HACS](https://hacs.xyz/docs/installation/prerequisites) installed  
+- Access to File Editor or a way to edit your `configuration.yaml`  
+- Running Ollama server or compatible LLM API with token-based authentication  
+
+---
+
+## Installation
+
+1. Open Home Assistant UI and go to **HACS** → **Integrations**.  
+2. Click the three dots menu (top right), then **Custom repositories**.  
+3. Add this repository URL:  
+   `https://github.com/Peacem4kr/file2prompt`  
+4. Choose **Integration** as the category and click **Add**.  
+5. Back in HACS, search for **File2prompt** and click **Install**.  
+6. Restart Home Assistant to complete installation.  
+
+---
+
+## Configuration
+
+### Step 1: Create API Token
+
+Create a token in your Ollama or LLM server interface:
+
+- Give the token a descriptive name (e.g., `HomeAssistant File2prompt`)  
+- Copy the token and save it securely  
+
+### Step 2: Add the Integration
+
+1. Go to **Settings** → **Devices & Services** → **Add Integration**.  
+2. Search for **File2prompt** and select it.  
+3. Fill in the following:  
+   - **Ollama Server IP:** Your Ollama server IP address  
+   - **Ollama Model Version:** Model name/version you want to use  
+   - **Home Assistant URL:** Your Home Assistant base URL  
+   - **Create New Text Helper:** Check this to create a helper to store AI responses (max length 1024)  
+   - **Select Helper:** Choose the input_text helper for AI responses  
+   - **Paste Token:** Paste the token created earlier  
+   - **Choose Data Input File:** Select or create an empty input file  
+4. Click **Submit**.
+
+You can update these settings later under **Settings → Devices & Services → File2prompt → Configure**.
+
+---
+
+### Step 3: Add Shell Command to `configuration.yaml`
+
+Add the following to your `configuration.yaml`:
+
+```yaml
+shell_command:
+  file2prompt: "/config/file2prompt.sh"
+
+This shell command triggers the file processing script.
+Restart Home Assistant after saving the file.
+
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
