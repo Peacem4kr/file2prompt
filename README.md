@@ -74,7 +74,9 @@ action:
   - service: shell_command.file2prompt
 mode: single
 ```
+
 Trigger this automation however you like — from a dashboard button or other event.
+
 ---
 
 
