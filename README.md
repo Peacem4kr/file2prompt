@@ -67,14 +67,15 @@ Restart Home Assistant after saving the file.
 
 
 ### Step 4: Create an Automation
-``alias: File2prompt - Send file to Llama (via shell)
+
+```alias: File2prompt - Send file to Llama (via shell)
 description: Trigger sending file contents to the LLM
 trigger:
   # Add your trigger here (time, event, button, etc.)
 condition: []
 action:
   - service: shell_command.file2prompt
-mode: single``
+mode: single```
 
 ---
 
