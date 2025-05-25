@@ -30,9 +30,11 @@ This repository contains a custom integration for Home Assistant called "File2pr
 ### Step 1: Create API Token
 
 Create a token in your Ollama or LLM server interface:
-
-- Give the token a descriptive name (e.g., `HomeAssistant File2prompt`)  
-- Copy the token and save it securely  
+1. Open your profile
+2. Security - scroll down to Long-lived access tokens
+3. Create Token
+4. Give the token a descriptive name (e.g., `HomeAssistant File2prompt`)
+5. Copy the token into memory  
 
 ### Step 2: Add the Integration
 
@@ -47,7 +49,7 @@ Create a token in your Ollama or LLM server interface:
    - **Paste Token:** Paste the token created earlier  
    - **Choose Data Input File:** Select or create an empty input file  
 4. Click **Submit**.
-
+The input file can be used as a dump by other integrations or events, if you have an existing file modify the input path correctly
 You can update these settings later under **Settings → Devices & Services → File2prompt → Configure**.
 
 
@@ -91,12 +93,12 @@ Let's continue the setup for this.
  - Select Set up a notification service
  - Set File path: /config/www/grocerylog.json
  - Enable Timestamp
- - (Optional) Change the entity name, e.g., to Grocerylog
+ - (Optional) Change the entity name, e.g., to Grocerylog once saved
 
 This file will be used to save grocery items in a JSON file, including timestamps.
 
 ###Step 2: Automation to Save Grocery Items to File
-Create an automation that saves every new item added to your shopping list into the file:
+Create an automation that saves every new item added to your shopping list into the file created with the file intgeration:
 ```
 alias: Grocery - Save todo to file
 description: ""
