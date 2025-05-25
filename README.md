@@ -3,6 +3,7 @@
 ## Overview
 
 This repository contains a custom integration with a user friendly UI for Home Assistant called "File2prompt." 
+
 The integration connects Home Assistant with a local Ollama language model server to analyze data. It allows users to choose an input data file and send it to an Ollama LLM for analysis via Home Assistant. 
 
 ---
