@@ -54,9 +54,10 @@ You can update these settings later under **Settings → Devices & Services → 
 ### Step 3: Add Shell Command to `configuration.yaml`
 
 Add the following to your `configuration.yaml`:
+```
 shell_command:
   file2prompt: "/config/file2prompt.sh"
-
+```
 This shell command triggers the file processing script.
 Restart Home Assistant after saving the file.
 
