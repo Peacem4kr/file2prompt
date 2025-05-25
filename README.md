@@ -22,7 +22,6 @@ This repository contains a custom integration with a user friendly UI for Home A
 4. **Download** 
 5. Restart Home Assistant
 
----
 
 ## Configuration
 
