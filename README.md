@@ -88,6 +88,7 @@ I use this integration to analyze my grocery and to-do behavior by automatically
 Let's continue the setup for this.
 
 ### Step 1: Install the File Integration
+
 1. First, install the standard File Integration in Home Assistant to create a file where the grocery items will be saved:
 2. Go to Settings → Integrations → + Add Integration
 3. Search for and install File
