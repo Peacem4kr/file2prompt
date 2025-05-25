@@ -9,7 +9,7 @@ This repository contains a custom integration with a user friendly UI for Home A
 ## Requirements
 
 - Home Assistant with [HACS](https://hacs.xyz/docs/use/) installed  
-- Access to File Editor or a way to edit your `configuration.yaml`  
+- Access to [File Editor](https://www.home-assistant.io/common-tasks/supervised/) or a way to edit your `configuration.yaml`  
 - Running [Ollama](https://github.com/ollama/ollama/blob/main/README.md) server or compatible LLM API with token-based authentication
 
 ---
