@@ -1,7 +1,7 @@
 {
   "domain": "file2prompt",
   "name": "File2prompt",
-  "documentation": "https://github.com/yourusername/file2prompt",
+  "documentation": "https://github.com/Peacem4kr/file2prompt",
   "dependencies": [],
   "codeowners": ["@Peacem4kr"],
   "requirements": [],
