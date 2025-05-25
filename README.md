@@ -56,11 +56,11 @@ The prompt can be changed here aswell. (at the moment the prompt is not showing 
 
 ### Step 3: Add Shell Command to `configuration.yaml`
 
-Add the following to your `configuration.yaml`:
-```
-shell_command:
-  file2prompt: "/config/file2prompt.sh"
-```
+   Add the following to your `configuration.yaml`:
+   ```
+   shell_command:
+     file2prompt: "/config/file2prompt.sh"
+   ```
 This shell command is used later in an Automation and triggers the file processing script.
 
 Restart Home Assistant after saving the file.
