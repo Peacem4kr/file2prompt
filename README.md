@@ -84,8 +84,12 @@ Trigger this automation however you like — from a dashboard button or other ev
 ---
 
 ## Example Use Case: Grocery List Data Analysis with File2prompt
-I use this integration to analyze my grocery and to-do behavior by automatically logging items added to my shopping list and then processing that data with AI via File2prompt.
+I use this integration to analyze my grocery purchasing behavior by automatically logging items added to my shopping list and then processing that data with AI via File2prompt.
+The idea is that my LLM can suggest products that i could have missed on my grocery list.
+
 Let's continue the setup for this.
+
+For this, i use the File integration as this allows me to save data into a file with timestamp very easy, an Automation will be created that triggers on my shopping list and adds the items to the file.
 
 ### Step 1: Install the File Integration
 
@@ -105,20 +109,80 @@ Create an automation that saves every new item added to your shopping list into 
 ```
 alias: Grocery - Save todo to file
 description: ""
-trigger:
-  - platform: event
-    event_type: shopping_list_updated
+triggers:
+  - event_type: shopping_list_updated
     event_data:
       action: add
-condition: []
-action:
-  - service: notify.file
-    data:
+    trigger: event
+conditions: []
+actions:
+  - data:
       message: "{{ trigger.event.data.item.name }}"
+    action: notify.send_message
+    enabled: true
+    target:
+      entity_id:
+        - notify.file
 mode: single
+
 ```
 
+Make sure to check that your file/ entity is added correctly.
 
+### Dashboard
+I have created A simple dashboard that shows the todo list.
+Adds a button to trigger the integration.
+Shows the respond from AI.
+
+```
+type: sections
+max_columns: 4
+title: Boodschappenlijst
+path: boodschappenlijst
+icon: mdi:cart
+sections:
+  - type: grid
+    cards:
+      - type: heading
+        heading_style: title
+      - display_order: alpha_asc
+        type: todo-list
+        entity: todo.shopping_list
+        hide_create: false
+        hide_completed: true
+  - type: grid
+    cards:
+      - type: heading
+        heading_style: title
+      - type: custom:mushroom-entity-card
+        entity: automation.boodschappenlijst_naar_llama_2
+        icon_color: green
+        fill_container: false
+        layout: horizontal
+        name: Duw op mij en vraag AI voor suggesties
+        primary_info: name
+        secondary_info: none
+        tap_action:
+          action: perform-action
+          perform_action: automation.trigger
+          target:
+            entity_id: automation.boodschappenlijst_naar_llama_2
+          data:
+            skip_condition: true
+        hold_action:
+          action: none
+        double_tap_action:
+          action: none
+      - type: markdown
+        content: |
+          **🛒 Voorgestelde artikels:**   
+          {{ states('input_text.grocery_ai_response') }}
+header: {}
+theme: synthwave
+cards: []
+subview: true
+
+```
 
 ## System Architecture
 
