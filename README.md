@@ -10,7 +10,7 @@ This repository contains a custom integration with a user friendly UI for Home A
 
 - Home Assistant with [HACS](https://hacs.xyz/docs/use/) installed  
 - Access to File Editor or a way to edit your `configuration.yaml`  
-- Running Ollama server or compatible LLM API with token-based authentication  
+- Running Ollama server or compatible LLM API with token-based authentication (https://github.com/ollama/ollama/blob/main/README.md)  
 
 ---
 
