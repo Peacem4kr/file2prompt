@@ -136,6 +136,8 @@ Shows the respond from AI.
 
 **I have the mushroom addon from HACS**
 
+
+
 ```
 type: sections
 max_columns: 4
