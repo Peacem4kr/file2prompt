@@ -45,10 +45,9 @@ Create a token in your Ollama or LLM server interface:
    - **Create New Text Helper:** Check this to create a helper to store AI responses (max length 1024)  
    - **Select Helper:** Choose the input_text helper for AI responses  
    - **Paste Token:** Paste the token created earlier  
-   - **Choose Data Input File:** Select or create an empty input file  
+   - **Choose Data Input File:** Select or create an empty input file (this file is should contain/or should be used to add data like sensors, events, ...)
 4. Click **Submit**.
    
-The input file can be used as a dump by other integrations or events, if you have an existing file modify the input path correctly
 
 You can update these settings later under **Settings → Devices & Services → File2prompt → Configure**.
 
