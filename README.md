@@ -60,13 +60,23 @@ You can update these settings later under **Settings → Devices & Services → 
 ### Step 3: Add Shell Command to `configuration.yaml`
 
 Add the following to your `configuration.yaml`:
-
-```yaml
 shell_command:
   file2prompt: "/config/file2prompt.sh"
 
 This shell command triggers the file processing script.
 Restart Home Assistant after saving the file.
+
+### Step : Create an Automation
+alias: File2prompt - Send file to Llama (via shell)
+description: "Trigger sending file contents to the LLM"
+trigger:
+  # Add your trigger here (time, event, button, etc.)
+condition: []
+action:
+  - service: shell_command.file2prompt
+mode: single
+
+
 
 
 ## User Preferences
