@@ -1,0 +1,57 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "File2prompt Configuration",
+        "description": "Set up your File2prompt integration to send file contents to Ollama AI",
+        "data": {
+          "ollama_ip": "Ollama Server IP (e.g., 192.168.1.45)",
+          "ollama_version": "Ollama Model Version (e.g., llama3.2)",
+          "ha_url": "Home Assistant URL with port (e.g., http://homeassistant.local:8123)",
+          "helper_entity": "Input Text Helper Entity (for AI response)",
+          "ha_token": "Home Assistant Long-Lived Access Token",
+          "input_file": "Path to input file (e.g., /config/www/input_data.json)",
+          "create_file": "Create file if it doesn't exist?"
+        }
+      }
+    },
+    "error": {
+      "invalid_ip": "Invalid IP address format",
+      "invalid_url": "Invalid URL format",
+      "invalid_entity": "Selected entity is not a valid input_text helper",
+      "invalid_token": "Invalid token format - should be a long-lived access token",
+      "invalid_file": "Invalid file path - must be within /config directory",
+      "cannot_connect": "Failed to connect to Home Assistant API",
+      "cannot_write": "Failed to write script file"
+    },
+    "abort": {
+      "already_configured": "This integration is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update File2prompt Configuration",
+        "description": "Modify your File2prompt settings",
+        "data": {
+          "ollama_ip": "Ollama Server IP (e.g., 192.168.1.45)",
+          "ollama_version": "Ollama Model Version (e.g., llama3.2)",
+          "ha_url": "Home Assistant URL with port (e.g., http://homeassistant.local:8123)",
+          "helper_entity": "Input Text Helper Entity (for AI response)",
+          "ha_token": "Home Assistant Long-Lived Access Token",
+          "input_file": "Path to input file (e.g., /config/www/input_data.json)",
+          "prompt": "AI Prompt (instructions for the model)",
+          "reset_prompt": "Reset prompt to default"
+        }
+      }
+    },
+    "error": {
+      "invalid_ip": "Invalid IP address format",
+      "invalid_url": "Invalid URL format",
+      "invalid_entity": "Selected entity is not a valid input_text helper",
+      "invalid_token": "Invalid token format - should be a long-lived access token",
+      "invalid_file": "Invalid file path - must be within /config directory",
+      "cannot_write": "Failed to update script file"
+    }
+  }
+}

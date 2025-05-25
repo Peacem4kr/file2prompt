@@ -1,0 +1,12 @@
+{
+  "domain": "file2prompt",
+  "name": "File2prompt",
+  "documentation": "https://github.com/yourusername/file2prompt",
+  "dependencies": [],
+  "codeowners": ["@Peacem4kr"],
+  "requirements": [],
+  "config_flow": true,
+  "version": "0.1.0",
+  "iot_class": "local_polling",
+  "icon": ""
+}

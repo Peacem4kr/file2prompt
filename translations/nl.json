@@ -1,0 +1,57 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "File2prompt Configuratie",
+        "description": "Stel je File2prompt integratie in om bestandsinhoud naar Ollama AI te sturen",
+        "data": {
+          "ollama_ip": "Ollama Server IP (bijv. 192.168.1.45)",
+          "ollama_version": "Ollama Model Versie (bijv. llama3.2)",
+          "ha_url": "Home Assistant URL met poort (bijv. http://homeassistant.local:8123)",
+          "helper_entity": "Output helper voor AI respons (input_text helper)",
+          "ha_token": "Home Assistant Long-Lived Access Token",
+          "input_file": "Pad naar invoerbestand (bijv. /config/www/input_data.json)",
+          "create_file": "Bestand aanmaken als het niet bestaat?"
+        }
+      }
+    },
+    "error": {
+      "invalid_ip": "Ongeldig IP-adres formaat",
+      "invalid_url": "Ongeldig URL formaat",
+      "invalid_entity": "Geselecteerde entiteit is geen geldige input_text helper",
+      "invalid_token": "Ongeldig token formaat - moet een long-lived access token zijn",
+      "invalid_file": "Ongeldig bestandspad - moet binnen /config directory zijn",
+      "cannot_connect": "Verbinding met Home Assistant API mislukt",
+      "cannot_write": "Schrijven van scriptbestand mislukt"
+    },
+    "abort": {
+      "already_configured": "Deze integratie is al geconfigureerd"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "File2prompt Configuratie Bijwerken",
+        "description": "Wijzig je File2prompt instellingen",
+        "data": {
+          "ollama_ip": "Ollama Server IP (bijv. 192.168.1.45)",
+          "ollama_version": "Ollama Model Versie (bijv. llama3.2)",
+          "ha_url": "Home Assistant URL met poort (bijv. http://homeassistant.local:8123)",
+          "helper_entity": "Output helper voor AI respons (input_text helper)",
+          "ha_token": "Home Assistant Long-Lived Access Token",
+          "input_file": "Pad naar invoerbestand (bijv. /config/www/input_data.json)",
+          "prompt": "AI Prompt (instructies voor het model)",
+          "reset_prompt": "Prompt terugzetten naar standaard"
+        }
+      }
+    },
+    "error": {
+      "invalid_ip": "Ongeldig IP-adres formaat",
+      "invalid_url": "Ongeldig URL formaat",
+      "invalid_entity": "Geselecteerde entiteit is geen geldige input_text helper",
+      "invalid_token": "Ongeldig token formaat - moet een long-lived access token zijn",
+      "invalid_file": "Ongeldig bestandspad - moet binnen /config directory zijn",
+      "cannot_write": "Bijwerken van scriptbestand mislukt"
+    }
+  }
+}
