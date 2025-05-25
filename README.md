@@ -191,7 +191,7 @@ subview: false
 
 ```
 
-## **Make sure that you modify the File2prompt integration to use the correct data input file!**
+### **Make sure that you modify the File2prompt integration to use the correct data input file!**
 
 ---
 
