@@ -1,0 +1,13 @@
+{
+  "name": "File2prompt",
+  "content_in_root": false,
+  "domain": "file2prompt",
+  "homeassistant": "2023.5.3",
+  "version": "1.0.0",
+  "description": "A custom integration to take data from a file and sends it to Ollama",
+  "keywords": ["homeassistant", "custom", "integration"],
+  "url": "https://github.com/Peacem4kr/file2prompt",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "zip_release": false
+}
