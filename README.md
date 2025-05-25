@@ -134,6 +134,8 @@ I have created A simple dashboard that shows the todo list.
 Adds a button to trigger the integration.
 Shows the respond from AI.
 
+**I have the mushroom addon from HACS**
+
 ```
 type: sections
 max_columns: 4
@@ -155,7 +157,7 @@ sections:
       - type: heading
         heading_style: title
       - type: custom:mushroom-entity-card
-        entity: automation.boodschappenlijst_naar_llama_2
+        entity: automation.file2prompt_send_file_to_llama_via_shell
         icon_color: green
         fill_container: false
         layout: horizontal
@@ -166,7 +168,7 @@ sections:
           action: perform-action
           perform_action: automation.trigger
           target:
-            entity_id: automation.boodschappenlijst_naar_llama_2
+            entity_id: automation.file2prompt_send_file_to_llama_via_shell
           data:
             skip_condition: true
         hold_action:
@@ -176,13 +178,18 @@ sections:
       - type: markdown
         content: |
           **🛒 Voorgestelde artikels:**   
-          {{ states('input_text.grocery_ai_response') }}
+          {{ states('input_text.myhelper') }}
 header: {}
 theme: synthwave
 cards: []
-subview: true
+subview: false
+
 
 ```
+
+**Make sure that you modify the File2prompt integration to use the correct data input file!**
+
+---
 
 ## System Architecture
 
