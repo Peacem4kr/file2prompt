@@ -8,7 +8,7 @@ This repository contains a custom integration for Home Assistant called "File2pr
 
 ## Requirements
 
-- Home Assistant with [HACS](https://hacs.xyz/docs/installation/prerequisites) installed  
+- Home Assistant with [HACS](https://hacs.xyz/docs) installed  
 - Access to File Editor or a way to edit your `configuration.yaml`  
 - Running Ollama server or compatible LLM API with token-based authentication  
 
