@@ -18,8 +18,7 @@ This repository contains a custom integration for Home Assistant called "File2pr
 
 1. Open Home Assistant UI and go to **HACS** → **Integrations**.  
 2. Click the three dots menu (top right), then **Custom repositories**.  
-3. Add this repository URL:  
-   `https://github.com/Peacem4kr/file2prompt`  
+3. Add this repository URL: `https://github.com/Peacem4kr/file2prompt`  
 4. Choose **Integration** as the category and click **Add**.  
 5. Back in HACS, search for **File2prompt** and click **Install**.  
 6. Restart Home Assistant to complete installation.  
