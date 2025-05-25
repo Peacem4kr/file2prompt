@@ -128,13 +128,15 @@ mode: single
 ```
 
 Make sure to check that your file/ entity is added correctly.
+Via the visual reprentation remove/add the correct File/Entity (created by the **[File](https://www.home-assistant.io/integrations/file/) integration)**
 
 ### Dashboard
-I have created A simple dashboard that shows the todo list.
-Adds a button to trigger the integration.
-Shows the respond from AI.
+I have created A simple dashboard that 
+- shows the todo list.
+- Adds a button to trigger the integration.
+- Shows the respond from AI.
 
-**I have the mushroom addon from HACS**
+**I have the mushroom addon from HACS if you just want to copy paste**
 
 
 
@@ -189,7 +191,7 @@ subview: false
 
 ```
 
-**Make sure that you modify the File2prompt integration to use the correct data input file!**
+## **Make sure that you modify the File2prompt integration to use the correct data input file!**
 
 ---
 
