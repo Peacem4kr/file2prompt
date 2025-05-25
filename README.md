@@ -58,7 +58,7 @@ Add the following to your `configuration.yaml`:
 shell_command:
   file2prompt: "/config/file2prompt.sh"
 ```
-This shell command triggers the file processing script.
+This shell command is used later in an Automation and triggers the file processing script.
 Restart Home Assistant after saving the file.
 
 
