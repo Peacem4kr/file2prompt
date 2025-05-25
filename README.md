@@ -49,6 +49,7 @@ Create a token in your Ollama or LLM server interface:
    - **Paste Token:** Paste the token created earlier  
    - **Choose Data Input File:** Select or create an empty input file  
 4. Click **Submit**.
+   
 The input file can be used as a dump by other integrations or events, if you have an existing file modify the input path correctly
 You can update these settings later under **Settings → Devices & Services → File2prompt → Configure**.
 
