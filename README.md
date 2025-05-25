@@ -79,32 +79,41 @@ Trigger this automation however you like — from a dashboard button or other ev
 
 ---
 
-#Example Use Case: Grocery List Data Analysis with File2prompt
-
+##Example Use Case: Grocery List Data Analysis with File2prompt
 I use this integration to analyze my grocery and to-do behavior by automatically logging items added to my shopping list and then processing that data with AI via File2prompt.
+Let's continue the setup for this.
 
-Step 1: Install the File Integration
-First, install the standard File Integration in Home Assistant to create a file where the grocery items will be saved:
+###Step 1: Install the File Integration
+1. First, install the standard File Integration in Home Assistant to create a file where the grocery items will be saved:
+2. Go to Settings → Integrations → + Add Integration
+3. Search for and install File
+4. During setup, create a new entry:
+ - Select Set up a notification service
+ - Set File path: /config/www/grocerylog.json
+ - Enable Timestamp
+ - (Optional) Change the entity name, e.g., to Grocerylog
 
-Go to Settings → Integrations → + Add Integration
+This file will be used to save grocery items in a JSON file, including timestamps.
 
-Search for and install File
+###Step 2: Automation to Save Grocery Items to File
+Create an automation that saves every new item added to your shopping list into the file:
+```
+alias: Grocery - Save todo to file
+description: ""
+trigger:
+  - platform: event
+    event_type: shopping_list_updated
+    event_data:
+      action: add
+condition: []
+action:
+  - service: notify.file
+    data:
+      message: "{{ trigger.event.data.item.name }}"
+mode: single
+```
 
-During setup, create a new entry:
 
-Select Set up a notification service
-
-Set File path: /config/www/grocerylog.json
-
-Enable Timestamp
-
-(Optional) Change the entity name, e.g., to Grocerylog
-
-This file service saves grocery items in a JSON file, including timestamps.
-
-## User Preferences
-
-Preferred communication style: Simple, everyday language.
 
 ## System Architecture
 
