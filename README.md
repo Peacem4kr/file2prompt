@@ -91,13 +91,13 @@ The idea is that my LLM can suggest products that i could have missed on my groc
 
 Let's continue the setup for this.
 
-For this, i use the [File](https://www.home-assistant.io/integrations/file/) integration as this allows me to save data into a file with timestamp very easy, an Automation will be created that triggers when an item is added to the shopping list, it then adds the item to a file (with timestamp).
+For this, i use the "File" integration as this allows me to save data into a file with timestamp very easy, an Automation will be created that triggers when an item is added to the shopping list, it then adds the item to a file (with timestamp).
 
 ### Step 1: Install the File Integration
 
 1. First, install the standard [File](https://www.home-assistant.io/integrations/file/) Integration in Home Assistant to create a file where the grocery items will be saved
 2. Go to Settings → Integrations → + Add Integration
-3. Search for and install File
+3. Search for and install **File**
 4. During setup, create a new entry:
  - Select Set up a notification service
  - Set File path: /config/www/grocerylog.json
@@ -106,11 +106,11 @@ For this, i use the [File](https://www.home-assistant.io/integrations/file/) int
 
 This file will be used to save grocery items in a JSON file, including timestamps.
 
-### Step 2: Install the Shopping list Integration
+### Step 2: Install the "Shopping list" Integration
 
 1. Install the standard [Shopping list](https://www.home-assistant.io/integrations/shopping_list) Integration in Home Assistant to create a shopping list
 2. Go to Settings → Integrations → + Add Integration
-3. Search for and install Shopping list
+3. Search for and install **Shopping list**
 
 ### Step 3: Automation to Save Grocery Items to File
 
