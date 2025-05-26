@@ -91,7 +91,7 @@ The idea is that my LLM can suggest products that i could have missed on my groc
 
 Let's continue the setup for this.
 
-For this, i use the [File](https://www.home-assistant.io/integrations/file/) integration as this allows me to save data into a file with timestamp very easy, an Automation will be created that triggers when an item is added to the shopping list, it then adds the item to a file.
+For this, i use the [File](https://www.home-assistant.io/integrations/file/) integration as this allows me to save data into a file with timestamp very easy, an Automation will be created that triggers when an item is added to the shopping list, it then adds the item to a file (with timestamp).
 
 ### Step 1: Install the File Integration
 
