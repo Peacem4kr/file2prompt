@@ -29,7 +29,7 @@ The integration connects Home Assistant with a local Ollama language model serve
 
 ### Step 1: Create API Token
 
-Create a token for your Ollama or LLM server in Home Assistant:
+Create a token for your Ollama LLM server in Home Assistant:
 1. Open your profile
 2. Security - scroll down to Long-lived access tokens
 3. Create Token
