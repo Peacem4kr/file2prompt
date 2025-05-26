@@ -91,7 +91,7 @@ Trigger this automation however you like — from a dashboard button or other ev
 I use this integration to analyze my grocery purchasing behavior by automatically logging items added to my shopping list and then processing that data with AI via File2prompt.
 The idea is that my LLM can suggest products that i could have missed on my grocery list.
 
-Let's continue the setup for this.
+Let's continue the setup.
 
 For this, i use the "File" integration as this allows me to save data into a file with timestamp very easy, an Automation will be created that triggers when an item is added to the shopping list, it then adds the item to a file (with timestamp).
 
