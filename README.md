@@ -36,6 +36,7 @@ Create a token for your Ollama LLM server in Home Assistant:
 4. Give the token a descriptive name (e.g., `HomeAssistant File2prompt`)
 5. Copy the token into memory  
 
+
 ### Step 2: Add the Integration
 
 1. Go to **Settings** → **Devices & Services** → **Add Integration**.  
@@ -106,11 +107,13 @@ For this, i use the "File" integration as this allows me to save data into a fil
 
 This file will be used to save grocery items in a JSON file, including timestamps.
 
+
 ### Step 2: Install the "Shopping list" Integration
 
 1. Install the standard [Shopping list](https://www.home-assistant.io/integrations/shopping_list) Integration in Home Assistant to create a shopping list
 2. Go to Settings → Integrations → + Add Integration
 3. Search for and install **Shopping list**
+
 
 ### Step 3: Automation to Save Grocery Items to File
 
