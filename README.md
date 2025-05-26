@@ -109,7 +109,7 @@ For this, i use the "File" integration as this allows me to save data into a fil
  - Enable Timestamp
  - (Optional) Change the entity name, e.g., to Grocerylog once saved
 
-This file will be used to save grocery items in a JSON file, including timestamps.
+This JSON file will be used to save my grocery items in, including timestamps.
 
 
 ### Step 2: Install the "Shopping list" Integration
