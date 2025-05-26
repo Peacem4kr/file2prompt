@@ -95,7 +95,7 @@ For this, i use the [File](https://www.home-assistant.io/integrations/file/) int
 
 ### Step 1: Install the File Integration
 
-1. First, install the standard [File](https://www.home-assistant.io/integrations/file/) Integration in Home Assistant to create a file where the grocery items will be saved:
+1. First, install the standard [File](https://www.home-assistant.io/integrations/file/) Integration in Home Assistant to create a file where the grocery items will be saved
 2. Go to Settings → Integrations → + Add Integration
 3. Search for and install File
 4. During setup, create a new entry:
@@ -106,8 +106,16 @@ For this, i use the [File](https://www.home-assistant.io/integrations/file/) int
 
 This file will be used to save grocery items in a JSON file, including timestamps.
 
-### Step 2: Automation to Save Grocery Items to File
+### Step 2: Install the Shopping list Integration
+
+1. Install the standard [Shopping list](https://www.home-assistant.io/integrations/shopping_list) Integration in Home Assistant to create a shopping list
+2. Go to Settings → Integrations → + Add Integration
+3. Search for and install Shopping list
+
+### Step 3: Automation to Save Grocery Items to File
+
 Create an automation that saves every new item added to your shopping list into the file created with the file intgeration:
+
 ```
 alias: Grocery - Save todo to file
 description: ""
