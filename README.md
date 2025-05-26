@@ -114,10 +114,11 @@ This JSON file will be used to save my grocery items in, including timestamps.
 
 ### Step 2: Install the "Shopping list" Integration
 
-1. Install the standard [Shopping list](https://www.home-assistant.io/integrations/shopping_list) Integration in Home Assistant to create a shopping list (and start using it as main grocery list :D, in some shops with "client-cards" you can request your purchase history which u can manually add to grocerylog.json (mind the timeformat, ask any LLM to fix it otherwise))
+1. Install the standard [Shopping list](https://www.home-assistant.io/integrations/shopping_list) Integration in Home Assistant to create a shopping list (and start using it as main grocery list :D)
 2. Go to Settings → Integrations → + Add Integration
 3. Search for and install **Shopping list**
 
+*In some shops with "client-cards" you can request your purchase history which u can manually add to grocerylog.json (mind the timeformat, ask any LLM to fix it otherwise)*
 
 ### Step 3: Automation to Save Grocery Items to File
 
