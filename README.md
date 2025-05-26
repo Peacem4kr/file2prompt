@@ -44,9 +44,9 @@ Create a token for your Ollama LLM server in Home Assistant:
    - **Ollama Server IP:** Your Ollama server IP address  
    - **Ollama Model Version:** Model name/version you want to use  
    - **Home Assistant URL:** Your Home Assistant base URL  
-   - **Create New Text Helper:** Check this to create a helper to store AI responses (max length 1024)  
+   - **Create New Text Helper:** Ccreate a helper to store AI responses (max length 1024)  
    - **Select Helper:** Choose the input_text helper for AI responses  
-   - **Paste Token:** Paste the token created earlier  
+   - **Paste Token:** Paste the token created/copied earlier  
    - **Choose Data Input File:** Select or create an empty input file (this file is should contain/or should be used to add data like sensors, events, ...)
 4. Click **Submit**.
    
