@@ -95,7 +95,7 @@ For this, i use the [File](https://www.home-assistant.io/integrations/file/) int
 
 ### Step 1: Install the File Integration
 
-1. First, install the standard File Integration in Home Assistant to create a file where the grocery items will be saved:
+1. First, install the standard [File](https://www.home-assistant.io/integrations/file/) Integration in Home Assistant to create a file where the grocery items will be saved:
 2. Go to Settings → Integrations → + Add Integration
 3. Search for and install File
 4. During setup, create a new entry:
@@ -194,6 +194,8 @@ subview: false
 ```
 
 ### **Make sure that you modify the File2prompt integration to use the correct data input file!**
+
+I use this prompt: Below is my purchase history, including dates. I do groceries weekly (once a week). Do not give any other sentence besides the list. Compare this week's groceries to my normal pattern. Identify purchase frequencies (like weekly or monthly recurring products). Give me a list of products that are missing this week but are normally expected, without showing this week's list. Only give the missing products, on one line, separated by a comma and space. Ignore products that were bought only once, unless that was recent
 
 ---
 
