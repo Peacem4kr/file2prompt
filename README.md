@@ -118,7 +118,7 @@ This file will be used to save grocery items in a JSON file, including timestamp
 
 ### Step 3: Automation to Save Grocery Items to File
 
-Create an automation that saves every new item added to your shopping list into the file created with the file intgeration:
+Create an automation that automatically saves every new item added to your shopping list into the file created with the file intgeration:
 
 ```
 alias: Grocery - Save todo to file
@@ -146,11 +146,11 @@ Via the visual reprentation remove/add the correct File/Entity (created by the *
 
 ### Dashboard
 I have created A simple dashboard that 
-- shows the todo list.
-- Adds a button to trigger the integration.
-- Shows the respond from AI.
+- Shows the todo list
+- Has a button to trigger the File2prompt integration (send my grocerylog.json to my LLM together with a prompt)
+- Shows the respond from AI
 
-**I have the mushroom addon from HACS if you just want to copy paste**
+**I use the [Mushroom](https://github.com/piitaya/lovelace-mushroom) addon from HACS if you just want to copy paste**
 
 
 
