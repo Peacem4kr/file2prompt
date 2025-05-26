@@ -14,7 +14,7 @@ The integration connects Home Assistant with a local Ollama language model serve
 - Access to [File Editor](https://www.home-assistant.io/common-tasks/supervised/) or a way to edit your `configuration.yaml`  
 - Running [Ollama](https://github.com/ollama/ollama/blob/main/README.md) server or compatible LLM API with token-based authentication
 
----
+
 
 ## Installation
 
