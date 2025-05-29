@@ -84,7 +84,7 @@ action:
 mode: single
 ```
 
-Trigger this automation however you like — from a dashboard button or an other event.
+Trigger this automation however you like — from a dashboard button (then u can leave the trigger part empty), or an other trigger in this automation.
 
 
 ---
