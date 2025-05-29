@@ -71,6 +71,8 @@ Restart Home Assistant after saving the configuration.yaml file.
 
 ### Step 4: Create an Automation
 
+The automation is required to trigger the integration to run once (sending the input file to the LLM and returning a respond)
+
 ```
 alias: File2prompt - Send file to Llama (via shell)
 description: Trigger sending file contents to the LLM
@@ -82,7 +84,7 @@ action:
 mode: single
 ```
 
-Trigger this automation however you like — from a dashboard button or other event.
+Trigger this automation however you like — from a dashboard button or an other event.
 
 
 ---
