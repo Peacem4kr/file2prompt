@@ -66,7 +66,7 @@ The prompt can be changed here aswell. (at the moment the prompt is not showing 
    ```
 This [shell command](https://www.home-assistant.io/integrations/shell_command/) is used later in an Automation and triggers the file processing script.
 
-Restart Home Assistant after saving the file.
+Restart Home Assistant after saving the configuration.yaml file.
 
 
 ### Step 4: Create an Automation
