@@ -93,7 +93,7 @@ Trigger this automation however you like — from a dashboard button or an other
 
 ## Example Use Case: Grocery List Data Analysis with File2prompt
 
-I use this integration to analyze my grocery purchasing behavior by automatically logging the items i add to my shopping list, then processing that data with AI via File2prompt.
+I use the File2prompt integration to analyze my grocery purchasing behavior by automatically logging the items i add to my shopping list, then processing that data with AI.
 The idea is that my LLM can suggest products that i could have missed on my grocery list.
 
 Let's continue the setup.
