@@ -64,7 +64,7 @@ The prompt can be changed here aswell. (at the moment the prompt is not showing 
    shell_command:
      file2prompt: "/config/file2prompt.sh"
    ```
-This shell command is used later in an Automation and triggers the file processing script.
+This [shell command](https://www.home-assistant.io/integrations/shell_command/) is used later in an Automation and triggers the file processing script.
 
 Restart Home Assistant after saving the file.
 
