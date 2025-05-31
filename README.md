@@ -88,6 +88,7 @@ Trigger this automation however you like — from a dashboard button (then u can
 
 
 ---
+
 ---
 
 
@@ -216,7 +217,19 @@ subview: false
 I use this prompt: Below is my purchase history, including dates. I do groceries weekly (once a week). Do not give any other sentence besides the list. Compare this week's groceries to my normal pattern. Identify purchase frequencies (like weekly or monthly recurring products). Give me a list of products that are missing this week but are normally expected, without showing this week's list. Only give the missing products, on one line, separated by a comma and space. Ignore products that were bought only once, unless that was recent
 
 ---
+## Troubleshooting
+---
 
+The script is located in \\homeassistantIP\config and is called file2prompt.sh
+Add this to that file if you want the AI reponse to be registered in a file:
+```
+# Save response to JSON file
+echo "{\"response\": \"$SUMMARY\"}" > /config/www/ai_reponse.json`
+```
+There is a log file available where u can check what the AI is doing /config/www/grocerylog.log
+
+---
+---
 ## System Architecture
 
 The system is built as a Home Assistant custom integration that communicates with an external Ollama server. The integration follows the standard Home Assistant integration structure with config flows for user configuration.
