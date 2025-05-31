@@ -218,7 +218,6 @@ I use this prompt: Below is my purchase history, including dates. I do groceries
 
 ---
 ## Troubleshooting
----
 
 The script is located in \\homeassistantIP\config and is called file2prompt.sh
 Add this to that file if you want the AI reponse to be registered in a file:
